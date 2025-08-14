@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eiracleaning.com.au/sitemap.xml 

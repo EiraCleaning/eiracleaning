@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions - Eira Cleaning</title>
+  <meta name="description" content="Terms and conditions for Eira Cleaning services in Maitland. Read our service guarantee, cancellation policy, and payment terms.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="optimized/favicon-32.png">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;700&family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ===== DESIGN SYSTEM ===== */
+    :root {
+      /* Colors */
+      --sage-green: #A9B7A2;
+      --sage-green-dark: #7E8F77;
+      --warm-beige: #F5E8C7;
+      --soft-lavender: #D8C4E0;
+      --primrose-yellow: #F8E8A0;
+      --off-white: #F8F1E9;
+      --soft-charcoal: #4A4A4A;
+      --text-muted: #7E8F77;
+      --white: #FFFFFF;
+      
+      /* Typography */
+      --font-display: 'Dancing Script', cursive;
+      --font-heading: 'Lora', serif;
+      --font-body: 'Montserrat', sans-serif;
+      --font-ui: 'Quicksand', sans-serif;
+      
+      /* Spacing */
+      --spacing-xs: 0.5rem;
+      --spacing-sm: 1rem;
+      --spacing-md: 1.5rem;
+      --spacing-lg: 2rem;
+      --spacing-xl: 3rem;
+      --spacing-xxl: 4rem;
+      
+      /* Border Radius */
+      --radius-sm: 8px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-xl: 18px;
+      
+      /* Shadows */
+      --shadow-sm: 0 2px 8px rgba(169,183,162,0.07);
+      --shadow-md: 0 2px 12px rgba(169,183,162,0.10);
+      --shadow-lg: 0 4px 20px rgba(169,183,162,0.15);
+      
+      /* Transitions */
+      --transition-fast: 0.2s ease;
+      --transition-smooth: 0.3s ease;
+    }
+
+    /* ===== BASE STYLES ===== */
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      background: var(--off-white);
+      color: var(--soft-charcoal);
+      font-family: var(--font-heading);
+      min-width: 320px;
+      line-height: 1.6;
+    }
+
+    /* ===== TYPOGRAPHY SYSTEM ===== */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      margin: 0 0 var(--spacing-sm) 0;
+      line-height: 1.2;
+    }
+
+    .display-title {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--sage-green);
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2.5rem;
+      color: var(--sage-green);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .body-text {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--soft-charcoal);
+      line-height: 1.6;
+    }
+
+    .body-text-large {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      color: var(--soft-charcoal);
+      line-height: 1.6;
+    }
+
+    /* ===== BUTTON SYSTEM ===== */
+    .btn {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 700;
+      padding: 0.75em 2em;
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 48px;
+      min-height: 48px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary {
+      background: var(--sage-green);
+      color: var(--white);
+    }
+
+    .btn-primary:hover, .btn-primary:focus {
+      background: var(--sage-green-dark);
+      color: var(--white);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--sage-green);
+      border: 1px solid var(--sage-green);
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus {
+      background: var(--sage-green);
+      color: var(--white);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ===== LAYOUT SYSTEM ===== */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .section {
+      padding: var(--spacing-xxl) 0;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      padding: var(--spacing-lg);
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--off-white);
+      height: 104px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5vw;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-sm);
+    }
+
+    .logo-img {
+      height: 80px;
+      display: block;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: var(--spacing-md);
+    }
+
+    .nav-links a {
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      color: var(--soft-charcoal);
+      text-decoration: none;
+      padding: 0.5em 0.8em;
+      border-radius: var(--radius-sm);
+      transition: all var(--transition-fast);
+    }
+
+    .nav-links a:hover, .nav-links a:focus {
+      background: var(--sage-green);
+      color: var(--off-white);
+      outline: none;
+    }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 1000;
+    }
+
+    .hamburger span {
+      width: 25px;
+      height: 3px;
+      background: var(--sage-green);
+      margin: 3px 0;
+      transition: 0.3s;
+      border-radius: 2px;
+    }
+
+    .nav-cta {
+      background: var(--sage-green) !important;
+      color: var(--white) !important;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      padding: 0.5em 1.4em;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-cta:hover, .nav-cta:focus {
+      background: var(--sage-green-dark) !important;
+      color: var(--white) !important;
+    }
+
+    /* ===== TERMS CONTENT ===== */
+    .terms-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--spacing-lg);
+    }
+
+    .terms-section {
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .terms-section h2 {
+      color: var(--sage-green);
+      font-size: 1.5rem;
+      margin-bottom: var(--spacing-md);
+      border-bottom: 2px solid var(--warm-beige);
+      padding-bottom: var(--spacing-xs);
+    }
+
+    .terms-section p {
+      margin-bottom: var(--spacing-md);
+      text-align: justify;
+    }
+
+    .terms-section strong {
+      color: var(--sage-green-dark);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--sage-green);
+      color: var(--white);
+      padding: var(--spacing-lg) 0;
+      text-align: center;
+      margin-top: var(--spacing-xxl);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      transition: color var(--transition-fast);
+    }
+
+    .footer-links a:hover {
+      color: var(--warm-beige);
+    }
+
+    .footer-text {
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--off-white);
+    }
+
+    /* ===== RESPONSIVE DESIGN ===== */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px;
+        height: 100vh;
+        background: var(--off-white);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 100px;
+        transition: 0.3s ease-in-out;
+        box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+        z-index: 999;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-links a {
+        margin: 1rem 0;
+        font-size: 1.1rem;
+        padding: 0.8em 1.2em;
+      }
+
+      .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+      }
+
+      .hamburger.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+      }
+      
+      .section-title {
+        font-size: 2rem;
+      }
+      
+      .terms-content {
+        padding: var(--spacing-md);
+      }
+      
+      .footer-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 1.8rem;
+      }
+      
+      .terms-content {
+        padding: var(--spacing-sm);
+      }
+      
+      .terms-section h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="optimized/logo-120.png" alt="Eira Cleaning Logo" class="logo-img" loading="eager">
+    </div>
+    <nav class="nav-menu">
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links">
+        <a href="eira-cleaning-onepager.html" class="nav-link">Home</a>
+        <a href="eira-cleaning-onepager.html#services" class="nav-link">Services</a>
+        <a href="eira-cleaning-onepager.html#about" class="nav-link">About</a>
+        <a href="eira-cleaning-onepager.html#contact" class="nav-link nav-cta">Book Now</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Terms & Conditions Content -->
+  <section class="section">
+    <div class="container">
+      <div class="terms-content">
+        <h1 class="section-title">Terms & Conditions</h1>
+        <p class="body-text-large" style="text-align: center; margin-bottom: var(--spacing-xl);">
+          Please read these terms and conditions carefully before booking our services.
+        </p>
+
+        <div class="terms-section">
+          <h2>1. Service Guarantee</h2>
+          <p class="body-text">
+            We aim to provide high-quality, allergy-safe, eco-friendly cleaning. If you're not satisfied, please contact us within <strong>24 hours</strong> and we will arrange a re-clean or fair resolution.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>2. Access to Property</h2>
+          <p class="body-text">
+            Clients must ensure safe and timely access to the premises at the scheduled time. If access is not available, a <strong>cancellation fee may apply</strong>.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>3. Cancellations & Rescheduling</h2>
+          <p class="body-text">
+            We require a minimum of <strong>24 hours' notice</strong> for cancellations or rescheduling. Less than 24 hours' notice may incur a fee of <strong>50% of the service cost</strong>.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>4. Payment Terms</h2>
+          <p class="body-text">
+            Payment is due at the time of service unless otherwise agreed. We accept <strong>bank transfer, card payments, and secure payment links</strong>.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>5. Health & Safety</h2>
+          <p class="body-text">
+            Our team uses <strong>non-toxic, fragrance-free, and allergy-safe products</strong>. Please inform us of any specific allergies, sensitivities, or access requirements in advance.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>6. Breakages or Damage</h2>
+          <p class="body-text">
+            While all care is taken, accidents may occur. Any damage must be reported within <strong>24 hours of service</strong>. Liability is limited to the cost of repair or replacement.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>7. Add-On Services</h2>
+          <p class="body-text">
+            Extra services (e.g., oven cleaning, wardrobe interiors) must be <strong>booked in advance</strong> to allow adequate time and pricing adjustment.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>8. Pets</h2>
+          <p class="body-text">
+            We are a <strong>pet-friendly service</strong>. However, pets must be secured if they are likely to interfere with the cleaning process.
+          </p>
+        </div>
+
+        <div class="terms-section">
+          <h2>9. Right to Refuse Service</h2>
+          <p class="body-text">
+            Eira Cleaning reserves the right to refuse or discontinue services for <strong>unsafe, hazardous, or disrespectful environments</strong>.
+          </p>
+        </div>
+
+        <div class="flex-center" style="margin-top: var(--spacing-xl);">
+          <a href="eira-cleaning-onepager.html" class="btn btn-primary">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="eira-cleaning-onepager.html">Home</a>
+        <a href="eira-cleaning-onepager.html#services">Services</a>
+        <a href="eira-cleaning-onepager.html#about">About</a>
+        <a href="eira-cleaning-onepager.html#contact">Contact</a>
+        <a href="terms-and-conditions.html">Terms & Conditions</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </div>
+      <div class="footer-text">
+        © 2024 Eira Cleaning. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger menu functionality
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const navLinksItems = document.querySelectorAll('.nav-links a');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    navLinksItems.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html> 
