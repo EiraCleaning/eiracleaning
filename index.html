@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0FN3CFSXS1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0FN3CFSXS1');
+    </script>
+    
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eira Cleaning | Eco-Friendly, Allergy-Safe House Cleaning in Maitland NSW</title>
   <meta name="description" content="Premium eco-friendly, allergy-safe house cleaning for Maitland, East Maitland, Rutherford, Metford, Thornton & Ashtonfield. Non-toxic products, HEPA vacuums, caring service. Book online.">
@@ -76,11 +86,11 @@
   <meta property="og:description" content="Eira Cleaning offers family-safe, eco-conscious home cleaning using non-toxic products and HEPA vacuums. Based in Maitland.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eira-cleaning.com.au">
-  <meta property="og:image" content="optimized/hero-image-1200-compressed.jpg">
+      <meta property="og:image" content="./assets/images/hero-image-1200.jpg">
   <meta property="og:site_name" content="Eira Cleaning">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="optimized/favicon-32.png">
+      <link rel="icon" type="image/png" href="./assets/images/favicon.png">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;700&family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -240,9 +250,10 @@
     }
 
     .btn-secondary {
-      background: transparent;
+      background: var(--white);
       color: var(--sage-green);
-      border: 1px solid var(--sage-green);
+      border: 2px solid var(--sage-green);
+      box-shadow: var(--shadow-sm);
     }
 
     .btn-secondary:hover, .btn-secondary:focus {
@@ -250,6 +261,7 @@
       color: var(--white);
       transform: translateY(-1px);
       box-shadow: var(--shadow-md);
+      border-color: var(--sage-green-dark);
     }
 
     .btn-large {
@@ -1005,6 +1017,475 @@
       line-height: 1.6;
     }
 
+    /* ===== CTA SECTION ===== */
+    .cta {
+      background: var(--sage-green);
+      padding: var(--spacing-xxl) 0;
+      text-align: center;
+    }
+
+    .cta-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .cta .section-title {
+      color: var(--white);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-lg);
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons .btn {
+      min-width: 160px;
+    }
+
+    /* ===== CONTACT FORM SECTION ===== */
+    .contact-form {
+      background: var(--warm-beige);
+      padding: var(--spacing-xxl) 0;
+    }
+
+    .contact-form-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+      text-align: center;
+    }
+
+    .contact-form-subtitle {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      color: var(--soft-charcoal);
+      margin-bottom: var(--spacing-lg);
+      line-height: 1.6;
+    }
+
+    /* MailerLite Form Styling */
+    .ml-form-embedContainer {
+      margin-top: var(--spacing-lg);
+    }
+
+    .ml-form-embedWrapper {
+      background-color: var(--white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      padding: var(--spacing-lg);
+    }
+
+    .ml-form-embedContent h4 {
+      color: var(--sage-green);
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: var(--spacing-sm);
+    }
+
+    .ml-form-embedContent p {
+      color: var(--soft-charcoal);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .ml-form-fieldRow {
+      margin-bottom: var(--spacing-md);
+    }
+
+    .ml-form-fieldRow input,
+    .ml-form-fieldRow textarea {
+      width: 100%;
+      padding: var(--spacing-sm);
+      border: 1px solid var(--sage-green);
+      border-radius: var(--radius-md);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      transition: border-color var(--transition-fast);
+    }
+
+    .ml-form-fieldRow input:focus,
+    .ml-form-fieldRow textarea:focus {
+      outline: none;
+      border-color: var(--sage-green-dark);
+      box-shadow: 0 0 0 2px rgba(169, 183, 162, 0.2);
+    }
+
+    .ml-form-embedSubmit button {
+      background-color: var(--sage-green);
+      color: var(--white);
+      border: none;
+      border-radius: var(--radius-md);
+      padding: var(--spacing-sm) var(--spacing-lg);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .ml-form-embedSubmit button:hover {
+      background-color: var(--sage-green-dark);
+      transform: translateY(-1px);
+    }
+
+    .ml-form-embedPermissions {
+      margin-top: var(--spacing-md);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .ml-form-embedPermissions a {
+      color: var(--sage-green);
+      text-decoration: underline;
+    }
+
+    .ml-form-recaptcha {
+      margin: var(--spacing-md) 0;
+    }
+
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-sm);
+      padding: var(--spacing-lg);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--spacing-lg);
+      text-align: center;
+      transition: transform var(--transition-smooth);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto;
+      display: block;
+      transition: transform var(--transition-smooth);
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1.1);
+    }
+
+    .service-title {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      color: var(--sage-green);
+      margin-bottom: var(--spacing-md);
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .service-desc {
+      font-family: var(--font-heading);
+      font-size: 1rem;
+      color: var(--soft-charcoal);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    .service-price {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--sage-green);
+      margin: 0;
+      line-height: 1.4;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about {
+      background: var(--warm-beige);
+      padding: var(--spacing-xxl) 0;
+    }
+
+    .about-content {
+      display: flex;
+      align-items: center;
+      gap: var(--spacing-xl);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .about-image img {
+      max-width: 80%;
+      height: auto;
+      border-radius: var(--radius-lg);
+    }
+
+    .about-features {
+      list-style: none;
+      padding: 0;
+      margin: var(--spacing-md) 0 0 0;
+    }
+
+    .about-features li {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--soft-charcoal);
+      margin-bottom: var(--spacing-xs);
+      padding-left: var(--spacing-sm);
+      position: relative;
+    }
+
+    .about-features li::before {
+      content: "•";
+      color: var(--sage-green);
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+    }
+
+    /* ===== WHY CHOOSE US SECTION ===== */
+    .why-choose {
+      background: var(--off-white);
+      padding: var(--spacing-xxl) 0;
+    }
+
+    .why-choose-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .benefits-list {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .checkmark {
+      color: var(--sage-green);
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 0.1rem;
+    }
+
+    /* ===== WHY CHOOSE US SECTION ===== */
+    .why-choose {
+      background: var(--off-white);
+      padding: var(--spacing-xxl) 0;
+    }
+
+    .why-choose-content {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .benefits-list {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--spacing-sm);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .checkmark {
+      color: var(--sage-green);
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 0.1rem;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact {
+      background: var(--sage-green);
+      padding: var(--spacing-xxl) 0;
+      text-align: center;
+    }
+
+    .contact-content {
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: var(--spacing-lg);
+      flex-wrap: wrap;
+    }
+
+    .cta-buttons .btn {
+      min-width: 160px;
+    }
+
+    /* ===== AREAS WE SERVE SECTION ===== */
+    .areas {
+      background: var(--warm-beige);
+      padding: var(--spacing-xxl) 0;
+      text-align: center;
+    }
+
+    .areas-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .areas-description {
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      color: var(--soft-charcoal);
+      margin-bottom: var(--spacing-lg);
+      line-height: 1.6;
+    }
+
+    .areas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: var(--spacing-md);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .area-chip {
+      display: inline-block;
+      padding: var(--spacing-sm) var(--spacing-md);
+      background: var(--white);
+      color: var(--sage-green);
+      text-decoration: none;
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      border-radius: var(--radius-lg);
+      border: 2px solid var(--sage-green);
+      transition: all var(--transition-smooth);
+      text-align: center;
+    }
+
+    .area-chip:hover {
+      background: var(--sage-green);
+      color: var(--white);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ===== FAQ SECTION ===== */
+    .faqs {
+      background: var(--off-white);
+      padding: var(--spacing-xxl) 0;
+    }
+
+    .faqs-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 var(--spacing-lg);
+    }
+
+    .faq-accordion {
+      margin-top: var(--spacing-lg);
+    }
+
+    .faq-item {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: var(--spacing-md);
+      overflow: hidden;
+      transition: box-shadow var(--transition-smooth);
+    }
+
+    .faq-item:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: var(--spacing-lg);
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--soft-charcoal);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color var(--transition-fast);
+    }
+
+    .faq-question:hover {
+      background-color: var(--off-white);
+    }
+
+    .faq-question:focus {
+      outline: 2px solid var(--sage-green);
+      outline-offset: -2px;
+    }
+
+    .faq-icon {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: var(--sage-green);
+      transition: transform var(--transition-smooth);
+    }
+
+    .faq-question[aria-expanded="true"] .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--transition-smooth);
+      background: var(--off-white);
+    }
+
+    .faq-answer.active {
+      max-height: 200px;
+    }
+
+    .faq-answer p {
+      margin: 0;
+      padding: 0 var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      color: var(--soft-charcoal);
+      line-height: 1.6;
+    }
+
 
 
 
@@ -1281,7 +1762,7 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="optimized/logo-120.png" alt="Eira Cleaning – Professional eco-friendly house cleaning services in Maitland NSW" class="logo-img" loading="eager">
+              <img src="./assets/images/eira-logo.png" alt="Eira Cleaning – Professional eco-friendly house cleaning services in Maitland NSW" class="logo-img" loading="eager">
     </div>
     <nav class="nav-menu">
       <div class="hamburger">
@@ -1302,9 +1783,9 @@
   <!-- Hero Section -->
   <section class="hero" id="home">
     <picture>
-      <source media="(min-width: 1200px)" srcset="optimized/hero-image-1200-compressed.jpg">
-      <source media="(min-width: 768px)" srcset="optimized/hero-image-800-compressed.jpg">
-      <img class="hero-image" src="optimized/hero-image-800-compressed.jpg" alt="Eco-friendly house cleaning in Maitland – family living room with clean, healthy environment" loading="eager" />
+              <source media="(min-width: 1200px)" srcset="./assets/images/hero-image-1200.jpg">
+        <source media="(min-width: 768px)" srcset="./assets/images/hero-image-800.jpg">
+        <img class="hero-image" src="./assets/images/hero-image-800.jpg" alt="Eco-friendly house cleaning in Maitland – family living room with clean, healthy environment" loading="eager" />
     </picture>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -1324,7 +1805,7 @@
       <div class="services-grid">
         <div class="service-card">
           <h2 class="service-title">Signature Standard Clean</h2>
-          <img src="optimized/standard-icon-64.png" alt="Eco-friendly Signature Standard house cleaning in Maitland" class="service-icon" loading="lazy" />
+          <img src="./assets/images/standard-icon.png" alt="Eco-friendly Signature Standard house cleaning in Maitland" class="service-icon" loading="lazy" />
           <p class="service-desc">
             Reliable upkeep for weekly, fortnightly, or monthly cleaning. We use non-toxic, biodegradable products, HEPA-filter vacuums, and microfibre cloths to leave your home fresh, healthy, and safe for children, pets, and allergy-sensitive households.
           </p>
@@ -1332,7 +1813,7 @@
         </div>
         <div class="service-card">
           <h2 class="service-title">Detailed Deep Clean</h2>
-          <img src="optimized/deep-clean-icon-64.png" alt="Detailed Deep Clean service in Maitland with allergy-safe methods" class="service-icon" loading="lazy" />
+          <img src="./assets/images/deep-clean-icon.png" alt="Detailed Deep Clean service in Maitland with allergy-safe methods" class="service-icon" loading="lazy" />
           <p class="service-desc">
             Comprehensive top-to-bottom refresh for seasonal cleans, post-illness recovery, moving in, or special occasions. Extra attention to detail, hard-to-reach spots, and thorough allergen reduction for a healthier home environment.
           </p>
@@ -1380,8 +1861,8 @@
       <!-- Right Section - Image -->
       <div class="about-image">
         <picture>
-          <source media="(min-width: 768px)" srcset="optimized/about-us-600-compressed.jpg">
-          <img src="optimized/about-us-400-compressed.jpg" alt="Professional house cleaning in Maitland – clean bedroom with HEPA vacuum and eco-friendly cleaning equipment" loading="lazy" />
+                  <source media="(min-width: 768px)" srcset="./assets/images/about-us-600.jpg">
+        <img src="./assets/images/about-us-400.jpg" alt="Professional house cleaning in Maitland – clean bedroom with HEPA vacuum and eco-friendly cleaning equipment" loading="lazy" />
         </picture>
       </div>
     </div>
@@ -1496,6 +1977,17 @@
     </div>
   </section>
   
+  <!-- CTA Section -->
+  <section class="cta section">
+    <div class="cta-content">
+      <h2 class="section-title">Book your Clean Today</h2>
+      <div class="cta-buttons">
+        <a href="tel:+61421298668" class="btn btn-primary">Call Us</a>
+        <a href="mailto:hello@eiracleaning.com.au" class="btn btn-secondary">Email Us</a>
+      </div>
+    </div>
+  </section>
+  
   <!-- Contact Form Section -->
   <section class="contact-form section" id="contact-form">
     <div class="contact-form-content">
@@ -1572,20 +2064,7 @@
     </div>
   </section>
   
-  <!-- Contact/CTA Section -->
-  <section class="contact section" id="contact">
-    <div class="contact-content">
-      <h2 class="display-title">Get in Touch with Eira Cleaning</h2>
-      <p class="body-text-large" style="color: var(--off-white); margin-bottom: var(--spacing-lg);">Book your Clean Today.</p>
-    </div>
-    
-    <div class="cta-buttons">
-      <a href="tel:+61421298668" class="btn btn-primary btn-large">Call Us</a>
-      <a href="mailto:hello@eiracleaning.com.au" class="btn btn-secondary btn-large">Email Us</a>
-    </div>
-  </section>
 
-  </section>
 
 
 
@@ -1609,7 +2088,7 @@
         <a href="privacy-policy.html">Privacy Policy</a>
       </div>
       <div class="footer-text">
-        © 2024 Eira Cleaning. All rights reserved.
+        © 2025 Eira Cleaning. All rights reserved.
       </div>
     </div>
   </footer>

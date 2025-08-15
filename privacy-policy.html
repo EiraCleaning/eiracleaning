@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag.js?id=G-0FN3CFSXS1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0FN3CFSXS1');
+    </script>
+    
+    <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy - Eira Cleaning</title>
   <meta name="description" content="Privacy policy for Eira Cleaning. Learn how we collect, use, and protect your personal information when using our cleaning services in Maitland.">
   
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="optimized/favicon-32.png">
+      <link rel="icon" type="image/png" href="./assets/images/favicon.png">
   
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lora:wght@400;700&family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -140,9 +150,10 @@
     }
 
     .btn-secondary {
-      background: transparent;
+      background: var(--white);
       color: var(--sage-green);
-      border: 1px solid var(--sage-green);
+      border: 2px solid var(--sage-green);
+      box-shadow: var(--shadow-sm);
     }
 
     .btn-secondary:hover, .btn-secondary:focus {
@@ -150,6 +161,7 @@
       color: var(--white);
       transform: translateY(-1px);
       box-shadow: var(--shadow-md);
+      border-color: var(--sage-green-dark);
     }
 
     /* ===== LAYOUT SYSTEM ===== */
@@ -453,7 +465,7 @@
   <!-- Header -->
   <header>
     <div class="logo">
-      <img src="optimized/logo-120.png" alt="Eira Cleaning Logo" class="logo-img" loading="eager">
+              <img src="./assets/images/eira-logo.png" alt="Eira Cleaning Logo" class="logo-img" loading="eager">
     </div>
     <nav class="nav-menu">
       <div class="hamburger">
@@ -583,7 +595,7 @@
         <a href="privacy-policy.html">Privacy Policy</a>
       </div>
       <div class="footer-text">
-        © 2024 Eira Cleaning. All rights reserved.
+        © 2025 Eira Cleaning. All rights reserved.
       </div>
     </div>
   </footer>
