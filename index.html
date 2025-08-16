@@ -105,24 +105,7 @@
   </script>
   <!-- End MailerLite Universal -->
 
-  <!-- Custom MailerLite Popup Override -->
-  <script>
-    // Wait for MailerLite to load
-    window.addEventListener('load', function() {
-      // Override default popup behavior
-      if (typeof ml !== 'undefined') {
-        // Disable automatic popup triggers
-        ml('config', 'disableAutoPopup', true);
-        
-        // Override any existing popup configurations
-        ml('config', 'popupDelay', 0);
-        ml('config', 'popupScrollTrigger', false);
-        
-        // Ensure popup can be shown multiple times
-        ml('config', 'popupOnce', false);
-      }
-    });
-  </script>
+
 
   <style>
     /* ===== DESIGN SYSTEM ===== */
@@ -1367,7 +1350,7 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#areas" class="nav-link">Areas We Serve</a>
         <a href="#faqs" class="nav-link">FAQs</a>
-        <button class="nav-link nav-cta" onclick="ml('show', 'g5PWuR', true)">Book Now</button>
+        <a class="ml-onclick-form nav-link nav-cta" href="javascript:void(0)" onclick="ml('show', 'Eu2Ebt', true)">Book Now</a>
       </div>
     </nav>
   </header>
@@ -1382,7 +1365,7 @@
     <div class="hero-content">
       <h1 class="hero-title">Eco-Friendly, Allergy-Safe House Cleaning in Maitland</h1>
       <p class="hero-subtitle">Non-toxic products • HEPA-filter vacuums • Safe for kids, pets & sensitive households</p>
-              <button class="btn btn-primary btn-large" onclick="ml('show', 'g5PWuR', true)">Book Now</button>
+              <a class="ml-onclick-form btn btn-primary btn-large" href="javascript:void(0)" onclick="ml('show', 'Eu2Ebt', true)">Book Now</a>
       <p class="hero-social-proof">Trusted by families across Maitland.</p>
     </div>
     <div class="scroll-indicator" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});">
@@ -1400,7 +1383,7 @@
           <p class="service-desc">
             Reliable upkeep for weekly, fortnightly, or monthly cleaning. We use non-toxic, biodegradable products, HEPA-filter vacuums, and microfibre cloths to leave your home fresh, healthy, and safe for children, pets, and allergy-sensitive households.
           </p>
-          <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book This Service</button>
+          <a class="ml-onclick-form btn btn-secondary" href="javascript:void(0)" onclick="ml('show', 'Eu2Ebt', true)">Book This Service</a>
         </div>
         <div class="service-card">
           <h2 class="service-title">Detailed Deep Clean</h2>
@@ -1408,7 +1391,7 @@
           <p class="service-desc">
             Comprehensive top-to-bottom refresh for seasonal cleans, post-illness recovery, moving in, or special occasions. Extra attention to detail, hard-to-reach spots, and thorough allergen reduction for a healthier home environment.
           </p>
-          <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book This Service</button>
+          <a class="ml-onclick-form btn btn-secondary" href="javascript:void(0)" onclick="ml('show', 'Eu2Ebt', true)">Book This Service</a>
         </div>
       </div>
       
@@ -1419,7 +1402,6 @@
           <li><strong>Upholstery Cleaning</strong> — Gentle, non-toxic care for sofas & chairs</li>
           <li><strong>Curtain/Drape Dusting or Steaming</strong> — Dust removal or eco-steam freshen-up</li>
         </ul>
-        <button class="btn btn-secondary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Book Add-Ons</button>
       </div>
       
       <div class="flex-center view-prices-section">
