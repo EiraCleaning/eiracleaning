@@ -1382,58 +1382,43 @@ header { white-space: nowrap; }
     </div>
   </section>
   <!-- About Us Content -->
-  <section id="about" class="about section-alt">
+  
+<section id="about" class="about section-alt">
+
 <style>
-/* Scoped About layout fix */
-#about .about-row{display:flex;flex-wrap:nowrap;align-items:center;justify-content:space-between;gap:3rem;}
-#about .about-text{flex:1 1 55%;min-width:320px;text-align:left;}
-#about .about-image{flex:1 1 40%;min-width:320px;display:flex;justify-content:flex-end;}
+#about .about-row{display:flex;flex-wrap:wrap;align-items:center;gap:3rem;}
+#about .about-text{flex:1 1 55%;min-width:300px;text-align:left;}
+#about .about-image{flex:1 1 40%;min-width:260px;display:flex;justify-content:flex-end;}
 #about .about-image picture{display:block;max-width:560px;width:100%;}
-#about .about-image img{display:block;max-width:100%;height:auto;margin:0;}
+#about .about-image img{display:block;max-width:100%;height:auto;margin:0;border-radius:1.25rem;}
 @media (max-width: 900px){
-  #about .about-row{flex-wrap:wrap;}
-  #about .about-text,#about .about-image{flex:1 1 100%;min-width:0;}
+  #about .about-text,#about .about-image{flex:1 1 100%;}
   #about .about-image{justify-content:center;margin-top:1.5rem;}
 }
 </style>
 
-  <div class="about-row" style="display:flex;flex-wrap:wrap;align-items:center;gap:2rem;">
-    <div class="about-text" style="flex:1 1 55%;min-width:280px;">
-      <div class="about-row" style="display:flex;flex-wrap:wrap;align-items:center;gap:2rem;">
-    <div class="about-image" style="flex:1 1 45%;min-width:280px;">
-      
-    </div>
-    <div class="about-text" style="flex:1 1 50%;min-width:280px;">
-      <div class="about-content">
-      <!-- Left Section - Text Content -->
+  <div class="container">
+    <div class="about-row">
       <div class="about-text">
         <h2 class="section-title" style="text-align: left; margin-bottom: var(--spacing-sm);">Cleaner Home, Healthier Family</h2>
-        <h3 class="section-subtitle" style="text-align: left; margin-bottom: var(--spacing-md);">Non-toxic, allergy-safe cleaning for your family</h3>
-        <p class="body-text-large" style="margin-bottom: var(--spacing-sm);">
+<h3 class="section-subtitle" style="text-align: left; margin-bottom: var(--spacing-md);">Non-toxic, allergy-safe cleaning for your family</h3>
+<p class="body-text-large" style="margin-bottom: var(--spacing-sm);">
           At Eira Cleaning, we use eco-friendly, fragrance-free products, HEPA vacuums, and microfibre cloths to create a healthier home for your family. Our allergy-safe approach helps reduce dust, pet dander, mould, and chemical residues—common triggers for asthma, eczema, and sensitivities.
         </p>
-        <p class="body-text-large">
+<p class="body-text-large">
           With carefully trained two-person teams, we clean with precision and care—minimising disruption while delivering premium results you can trust.
-        </p></div></div></div></div>
-        </div>
+        </p>
       </div>
-      
-      <!-- Right Section - Image -->
       <div class="about-image">
-        
-      </div>
-    </div>
-    </div>
-  </div>
-    </div>
-    <div class="about-image" style="flex:1 1 40%;min-width:260px;text-align:right;">
-      <picture>
+        <picture>
                   <source media="(min-width: 768px)" srcset="images/about-us-600.jpg">
         <img src="images/about-us-400.jpg" alt="Professional house cleaning in Maitland – clean bedroom with HEPA vacuum and eco-friendly cleaning equipment" loading="lazy" />
         </picture>
+      </div>
     </div>
   </div>
 </section>
+
   <!-- Why Choose Us Section -->
   <section id="why-choose-us" class="why-choose section">
     <div class="why-choose-content">
