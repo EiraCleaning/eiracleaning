@@ -1257,70 +1257,39 @@
 
 
 <style>
-/* --- About features bar (badges) refresh --- */
-.about .about-features-grid {
-  display: grid;
+/* --- About badges: refined cards aesthetic --- */
+.about .about-features-grid{
+  background: transparent !important;
   grid-template-columns: repeat(4, minmax(0,1fr));
-  gap: 0;
+  gap: var(--spacing-md);
+  padding: 0;
   margin-top: var(--spacing-lg);
-  padding: var(--spacing-lg);
-  background: var(--sage-green-dark);
-  color: var(--white);
-  border-radius: 22px;
-  box-shadow: var(--shadow-md);
-  align-items: center;
 }
-.about .feature-item {
-  background: transparent;
-  box-shadow: none;
-  border-radius: 0;
-  padding: var(--spacing-md) var(--spacing-lg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
+.about .feature-item{
+  background: #EEF3EE; /* soft sage tint */
+  border: 1px solid rgba(126,143,119,.28); /* based on --sage-green-dark */
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.06);
+  min-height: 140px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
   text-align: center;
+  padding: var(--spacing-md) var(--spacing-lg);
 }
-.about .feature-item + .feature-item { border-left: 1px solid rgba(255,255,255,0.2); }
-.about .feature-icon { margin-bottom: var(--spacing-sm); color: var(--white); }
-.about .feature-icon-svg { display:block; width:44px; height:44px; }
-.about .feature-text { color: var(--white); font-weight: 700; font-size: 1rem; line-height: 1.25; }
-/* Responsive */
+.about .feature-item + .feature-item{ border-left: 0 !important; } /* remove old separators */
+.about .feature-icon{ margin-bottom: 10px; color: var(--sage-green-dark); }
+.about .feature-icon-svg{ width: 40px; height: 40px; stroke: currentColor; stroke-width: 1.8; display:block; }
+.about .feature-text{ color: var(--soft-charcoal); font-weight: 700; font-size: 1.05rem; letter-spacing: .01em; }
+
+/* Hover lift for a touch of polish */
+.about .feature-item{ transition: transform var(--transition-smooth), box-shadow var(--transition-smooth); }
+.about .feature-item:hover{ transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,.08); }
+
+/* Responsive layout */
 @media (max-width: 900px){
-  .about .about-features-grid { grid-template-columns: repeat(2, minmax(0,1fr)); row-gap: var(--spacing-sm); }
-  .about .feature-item + .feature-item { border-left: 0; }
+  .about .about-features-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
 @media (max-width: 520px){
-  .about .about-features-grid { grid-template-columns: 1fr; }
-}
-</style>
-
-
-<!-- MailerLite Universal -->
-<script>
-  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-  ml('account', '1690997');
-</script>
-<!-- End MailerLite Universal -->
-
-
-<style>
-/* --- About badges: high-contrast pass --- */
-.about .about-features-grid{ background:#4c5f4a; }
-.about .feature-text{
-  color:#ffffff; font-weight:800; font-size:1.125rem; letter-spacing:.01em;
-  text-shadow:0 1px 0 rgba(0,0,0,.18);
-}
-.about .feature-icon{ color:#ffffff; }
-.about .feature-icon-svg{ width:48px; height:48px; stroke-width:2.2 !important; }
-@media (prefers-contrast: more){
-  .about .about-features-grid{ background:#3f503a; }
-  .about .feature-text{ font-size:1.2rem; }
-  .about .feature-icon-svg{ width:52px; height:52px; stroke-width:2.4 !important; }
+  .about .about-features-grid{ grid-template-columns: 1fr; }
 }
 </style>
 
@@ -1343,7 +1312,7 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#areas" class="nav-link">Areas We Serve</a>
         <a href="#faqs" class="nav-link">FAQs</a>
-        <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book Now</button>
+        <button class="btn btn-primary">Book Now</button>
       </div>
     </nav>
   </header>
@@ -1358,7 +1327,7 @@
     <div class="hero-content">
       <h1 class="hero-title">Eco-Friendly, Allergy-Safe House Cleaning in Maitland</h1>
       <p class="hero-subtitle">Non-toxic products • HEPA-filter vacuums • Safe for kids, pets & sensitive households</p>
-              <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book Now</button>
+              <button class="btn btn-primary btn-large">Book Now</button>
       <p class="hero-social-proof">Trusted by families across Maitland.</p>
     </div>
     <div class="scroll-indicator" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});">
@@ -1376,7 +1345,7 @@
           <p class="service-desc">
             Reliable upkeep for weekly, fortnightly, or monthly cleaning. We use non-toxic, biodegradable products, HEPA-filter vacuums, and microfibre cloths to leave your home fresh, healthy, and safe for children, pets, and allergy-sensitive households.
           </p>
-          <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book This Service</button>
+          <button class="btn btn-secondary">Book This Service</button>
         </div>
         <div class="service-card">
           <h2 class="service-title">Detailed Deep Clean</h2>
@@ -1384,7 +1353,7 @@
           <p class="service-desc">
             Comprehensive top-to-bottom refresh for seasonal cleans, post-illness recovery, moving in, or special occasions. Extra attention to detail, hard-to-reach spots, and thorough allergen reduction for a healthier home environment.
           </p>
-          <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book This Service</button>
+          <button class="btn btn-secondary">Book This Service</button>
         </div>
       </div>
       
@@ -1398,7 +1367,7 @@
       </div>
       
       <div class="flex-center view-prices-section">
-        <button class="btn btn-secondary ml-onclick-form" onclick="ml('show', 'Ayqnf2', true)">View Pricing</button>
+        <button class="ml-onclick-form" onclick="ml('show', 'Ayqnf2', true)" class="btn btn-secondary ml-onclick-form">View Pricing</button>
       </div>
     </div>
   </section>
