@@ -1296,6 +1296,34 @@
 }
 </style>
 
+
+<!-- MailerLite Universal -->
+<script>
+  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+  ml('account', '1690997');
+</script>
+<!-- End MailerLite Universal -->
+
+
+<style>
+/* --- About badges: high-contrast pass --- */
+.about .about-features-grid{ background:#4c5f4a; }
+.about .feature-text{
+  color:#ffffff; font-weight:800; font-size:1.125rem; letter-spacing:.01em;
+  text-shadow:0 1px 0 rgba(0,0,0,.18);
+}
+.about .feature-icon{ color:#ffffff; }
+.about .feature-icon-svg{ width:48px; height:48px; stroke-width:2.2 !important; }
+@media (prefers-contrast: more){
+  .about .about-features-grid{ background:#3f503a; }
+  .about .feature-text{ font-size:1.2rem; }
+  .about .feature-icon-svg{ width:52px; height:52px; stroke-width:2.4 !important; }
+}
+</style>
+
 </head>
 <body>
   <!-- Header -->
@@ -1315,7 +1343,7 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#areas" class="nav-link">Areas We Serve</a>
         <a href="#faqs" class="nav-link">FAQs</a>
-        <button class="btn btn-primary">Book Now</button>
+        <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book Now</button>
       </div>
     </nav>
   </header>
@@ -1330,7 +1358,7 @@
     <div class="hero-content">
       <h1 class="hero-title">Eco-Friendly, Allergy-Safe House Cleaning in Maitland</h1>
       <p class="hero-subtitle">Non-toxic products • HEPA-filter vacuums • Safe for kids, pets & sensitive households</p>
-              <button class="btn btn-primary btn-large">Book Now</button>
+              <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book Now</button>
       <p class="hero-social-proof">Trusted by families across Maitland.</p>
     </div>
     <div class="scroll-indicator" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});">
@@ -1348,7 +1376,7 @@
           <p class="service-desc">
             Reliable upkeep for weekly, fortnightly, or monthly cleaning. We use non-toxic, biodegradable products, HEPA-filter vacuums, and microfibre cloths to leave your home fresh, healthy, and safe for children, pets, and allergy-sensitive households.
           </p>
-          <button class="btn btn-secondary">Book This Service</button>
+          <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book This Service</button>
         </div>
         <div class="service-card">
           <h2 class="service-title">Detailed Deep Clean</h2>
@@ -1356,7 +1384,7 @@
           <p class="service-desc">
             Comprehensive top-to-bottom refresh for seasonal cleans, post-illness recovery, moving in, or special occasions. Extra attention to detail, hard-to-reach spots, and thorough allergen reduction for a healthier home environment.
           </p>
-          <button class="btn btn-secondary">Book This Service</button>
+          <button class="btn btn-primary ml-onclick-form" onclick="ml('show', 'Eu2Ebt', true)">Book This Service</button>
         </div>
       </div>
       
@@ -1370,7 +1398,7 @@
       </div>
       
       <div class="flex-center view-prices-section">
-        <button class="ml-onclick-form" onclick="ml('show', 'Ayqnf2', true)" class="btn btn-secondary ml-onclick-form">View Pricing</button>
+        <button class="btn btn-secondary ml-onclick-form" onclick="ml('show', 'Ayqnf2', true)">View Pricing</button>
       </div>
     </div>
   </section>
